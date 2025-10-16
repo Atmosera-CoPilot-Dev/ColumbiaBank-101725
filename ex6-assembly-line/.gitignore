@@ -1,0 +1,80 @@
+# ---- Visual Studio / .NET build artifacts ----
+.vs/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Bb]uild/
+artifacts/
+TestResults/
+[Bb]enchmarkDotNet.Artifacts/
+
+# Visual Studio generated files
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+*.cache
+*.pdb
+*.ipdb
+*.obj
+*.iobj
+*.ilk
+*.idb
+
+# MSBuild / NuGet
+project.lock.json
+project.fragment.lock.json
+project.assets.json
+*.nuget.props
+*.nuget.targets
+*.nupkg
+*.snupkg
+packages/
+!**/packages/build/
+.nuget/
+
+# Rider / ReSharper / JetBrains
+.idea/
+*.DotSettings.user
+_ReSharper*/
+
+# Visual Studio Code
+.vscode/
+.history/
+.code-workspace
+
+# Coverage / Reports
+coverage*/
+*.coverage
+*.coveragexml
+coverage.opencover.xml
+.opencover.xml
+coverage.cobertura.xml
+
+# Logs / Temp
+*.log
+*.tlog
+*.tmp
+*.temp
+
+# Debugging / Profiling
+*.svclog
+*.vsp
+*.vspx
+*.psess
+*.psess.runsettings
+
+# Publishing
+publish/
+*.Publish.xml
+
+# OS / Misc
+[Tt]humbs.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.DS_Store
+*.orig
+*.bak
+*.swp
+*.swo

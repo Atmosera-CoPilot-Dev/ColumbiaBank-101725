@@ -1,0 +1,7 @@
+@CoreWebApi_HostAddress = http://localhost:5099
+
+# Get all products https://localhost:5099/api/Inventory/Products
+GET {{CoreWebApi_HostAddress}}/api/Inventory/Products
+Accept: application/json
+
+###

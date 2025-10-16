@@ -1,0 +1,45 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Build results
+bin/
+obj/
+*.dll
+*.exe
+
+# Packages
+*.nupkg
+*.snupkg
+packages/
+*.log
+
+# User-specific files
+*.ide
+*.swp
+*.bak
+*.tmp
+
+# ASP.NET
+appsettings.*.json
+appsettings.json
+
+# Logs
+*.log
+logs/
+
+# Publish output
+wwwroot/
+
+# Resharper
+_ReSharper*/
+*.DotSettings.user
+
+# Rider
+.idea/
+*.iml
+
+# Others
+*.DS_Store
+Thumbs.db

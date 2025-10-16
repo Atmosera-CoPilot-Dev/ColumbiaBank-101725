@@ -1,0 +1,41 @@
+<addressCards>
+  <card>
+    <id>6ea3bd19-24c5-4ecd-9696-2a4ee00807a0</id>
+    <name>Clark Kent</name>
+    <homePhone>432-555-KENT</homePhone>
+    <workPhone>800-555-SUPR</workPhone>
+    <email>redflyingguy@justiceleague.org</email>
+    <address>
+      <street>23000 Watchtower</street>
+      <city>Earths Orbit</city>
+      <state />
+      <zipCode />
+    </address>
+  </card>
+  <card>
+    <id>26506015-7ba6-490b-b443-f34e37498c85</id>
+    <name>Tony Stark</name>
+    <homePhone>900-IAM-RICH</homePhone>
+    <workPhone />
+    <email>iman@starkindustries.com</email>
+    <address>
+      <street>1 Stark Industries Road</street>
+      <city>Los Angeles</city>
+      <state>CA</state>
+      <zipCode>42343</zipCode>
+    </address>
+  </card>
+  <card>
+    <id>b602f965-2b39-45e5-951b-eacf43a33ad6</id>
+    <name>Big Bird</name>
+    <homePhone>214-555-BIRD</homePhone>
+    <workPhone>972-555-1212</workPhone>
+    <email>bigyellowbird@muppets.com</email>
+    <address>
+      <street>123 Sesame street</street>
+      <city>New York</city>
+      <state>NY</state>
+      <zipCode>45445</zipCode>
+    </address>
+  </card>
+</addressCards>

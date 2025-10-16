@@ -1,0 +1,69 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+
+# Roslyn cache
+*.ide/
+
+# User-specific files
+*.rsuser
+*.sln.ide
+*.sln.docstates
+
+# Auto-generated files
+Generated\
+
+# Package directories
+*.nuget/
+packages/
+*.nupkg
+*.snupkg
+
+# Backup & report files
+*.log
+*.tlog
+*.log.*
+*.cache
+*.pdb
+*.ilk
+*.obj
+*.pch
+*.idb
+*.ipch
+*.aps
+*.ncb
+*.sbr
+*.sdf
+*.opensdf
+*.vcxproj.user
+*.vcxproj.filters
+*.vcxproj.filters.user
+
+# Publish output
+publish/
+*.publishsettings
+
+# Others
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*.DS_Store
+*.directory
+*.~*
