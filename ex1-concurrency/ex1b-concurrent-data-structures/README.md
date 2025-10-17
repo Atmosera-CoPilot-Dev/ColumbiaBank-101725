@@ -37,29 +37,20 @@ Use the prompts similar to the following (one at a time) to guide Copilot in mak
 - "Implement a Canceller method in Program.cs that cancels processing when the user presses Enter."
 - "Update the Start method and processing loops to respect cancellation."
 
-### (Optional) 5. Constructor Validation & Tests
-Strengthen the design by validating constructor arguments and adding unit tests.
-- "Validate TradeDayProcessor constructor: throw ArgumentOutOfRangeException if numConsumers <= 0."
-- "Throw ArgumentNullException if the predicate argument is null."
-- "Add a constructor overload test ensuring the default data file is resolved when only numConsumers and predicate are provided."
-- "Write MSTest verifying a FileNotFoundException is thrown when a non-existent CSV path is passed."
-- "Create tests for happy path: temp CSV with two rows, predicate should count only matching rows."
-- "Add a helper method in test class to create a temp CSV with header + provided rows."
+### (Optional) 5. Basic Verification Tests (after steps 1–4)
+Once the core producer/consumer, aggregation, and cancellation logic is working, optionally add a small MSTest suite to verify behavior. Keep tests simple and focused on the implemented features.
 
-Example test assertions:
-- Invalid consumer count -> Assert.ThrowsException<ArgumentOutOfRangeException>(...).
-- Null predicate -> Assert.ThrowsException<ArgumentNullException>(...).
-- Missing file -> Assert.ThrowsException<FileNotFoundException>(...).
-- Valid input -> Assert.AreEqual(expected, count, "Should count rows where predicate returns true.");
+Suggested simple tests:
+- "Count_Matches_ForSingleConsumer" -> Temp CSV with 2 data rows; predicate matches 1; assert result == 1.
+- "Count_Matches_ForMultipleConsumers" -> Same CSV, >1 consumers; assert count still correct (proves concurrency integrity).
+- "Cancellation_StopsEarly" -> Large temp CSV (e.g., duplicate a row 500 times); start processing with a CancellationTokenSource, cancel shortly after start; assert result < total matching rows.
+- "MissingFile_Throws" -> Pass a non-existent path; assert a FileNotFoundException (or that AggregateException contains it if thrown async).
+
+Keep the optional tests lightweight; focus on correctness and cancellation rather than exhaustive constructor validation.
 
 ---
 
-## Tips
-- Use Copilot to generate code, but review and test each change.
-- If you get stuck, ask Copilot for help with specific errors or refactoring.
-- Optional constructor validation & tests reinforce defensive programming and unit testing practices.
 
----
 
 
 
